@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Silahkan isi Formulir</h1>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="no_hp">No HP:</label>
+        <input type="text" id="no_hp" name="no_hp"><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+        <label for="laki-laki">Laki-laki</label><br>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="prodi">Prodi:</label>
+        <select id="prodi" name="prodi">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+        </select><br><br>
+
+        <label for="hobi">Hobi:</label>
+        <input type="checkbox" id="membaca" name="hobi[]" value="membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi[]" value="menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="berenang" name="hobi[]" value="berenang">
+        <label for="berenang">Berenang</label><br><br>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"></textarea><br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>

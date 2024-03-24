@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Matematika dan Logika</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <h1>Operasi Matematika dan Logika</h1>
+    <h3>JavaScript Dasar</h3>
+
+    <!-- Form untuk input angka -->
+    <form id="mathForm">
+        <label for="num1">Angka 1:</label>
+        <input type="number" id="num1" name="num1" required><br><br>
+        
+        <label for="num2">Angka 2:</label>
+        <input type="number" id="num2" name="num2" required><br><br>
+
+        <button type="button" onclick="sum()">Penjumlahan</button>
+        <button type="button" onclick="multiply()">Perkalian</button>
+        <button type="button" onclick="andOperator()">Operator Logika AND</button>
+        <button type="button" onclick="orOperator()">Operator Logika OR</button>
+        <button type="button" onclick="checkPrime()">Pengecekan Bilangan Prima</button>
+        <button type="button" onclick="calculateFactorial()">Perhitungan Faktorial</button>
+        <button type="button" onclick="checkPalindrome()">Pengecekan Palindrom</button>
+        <button type="button" onclick="generateFibonacci()">Pembuatan Urutan Fibonacci</button>
+    </form>
+
+    <!-- Hasil operasi akan ditampilkan di sini -->
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+    <script>
+        var fullName = "Aan";
+
+        document.write(fullName);
+    </script><br><br>
+    <script>
+        var fullName = "Aan";
+
+        fullName = "Abi Rahman";
+        fullName = "Rafles Kazuki"
+
+        document.write(fullName);
+    </script><br><br>
+    <script>
+        var fullName = "Aan";
+
+        fullName = "Abi Rahman";
+        fullName = "Rafles Kazuki"
+
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+        document.write('<br>');
+        document.write(fullName);
+    </script><br><br>
+    <script>
+        var fullName = "Abi Rahman";
+
+        fullName = "Rocky";
+
+        document.write(fullName);
+    </script><br><br>
+    <!-- <script>
+        const fullName = "Abi Rahman";
+
+        fullName = "Rocky";
+
+        document.write(fullName); //Error: Assignment to constant variable
+    </script><br><br> -->
+    <script>
+        var x = 10;
+        if (true) {
+            var x = 20;
+            console.log("Nilai x di dalam blok", x); //Output: 20
+        }
+        console.log("Nilai x di luar blok:", x); //output: 20
+    </script><br><br>
+    <script>
+        let y = 10;
+        if (true) {
+            let y = 20;
+            console.log("Nilai y di dalam blok", y); //Output: 20
+        }
+        console.log("Nilai y di luar blok:", y); //output: 10
+    </script><br><br>
+    <script>
+        let bulat = 25;
+        let decimal = 25.3;
+
+        document.writeln(bulat);
+        document.writeln('<br>');
+        document.writeln(desimal);
+        document.writeln('<br>');
+        document.writeln("Hasil penjumlahan = ");
+        document.writeln(desimal + bulat);
+    </script><br><br>
+    <script>
+        let Bulat = 25;
+        let string = 'a';
+
+        document.writeln(Bulat/0); //output infinity
+        document.writeln('<br>');
+        document.writeln(string/5); //output NaN
+    </script><br><br>
+    <script>
+        let bUlat = 123123123123123123123123123123123123123123n;
+
+        document.writeln(bUlat);
+    </script><br><br>
+    <script>
+        let text = "arkatama";
+
+        document.writeln(text);
+    </script><br><br>
+    <script>
+        let admin = true;
+        let perbandingan = 15 > 9;
+
+        document.writeln(perbandingan);
+    </script><br><br>
+    <script>
+        let aDmin;
+
+        document.writeln(aDmin); //output: undefinied
+    </script><br><br>
+    <script>
+        let Admin = null;
+
+        document.writeln(Admin);
+    </script><br><br>
+    <script>
+        let employee = Symbol('joko');
+
+        console.log(employee);
+        console.log(employee.description);
+    </script><br><br>
+    <script>
+    let Employee = {
+        name: "john",
+        age: 25,
+        job: "Web Developer",
+        isMarried: false,
+    };
+    document.write(`My name is ${Employee.name}, i am ${Employee.age} years old`);
+    </script><br><br>
+    <script>
+        let value = false;
+        let stringValue = String(value); // Mengubah nilai boolean menjadi string
+
+        alert(typeof value); // Output: "boolean"
+    </script><br><br>
+    <script>
+        let str = "123";
+        let nbr = Number("123");
+
+        alert (typeof nbr);
+    </script><br><br>
+    <script>alert(Boolean(0)); alert(Boolean(1))</script>
+    <script>
+        let a = 3; let b = 5;
+
+        console.log(a + b);
+        console.log(a - b);
+        console.log(a * b);
+        console.log(a ** b);
+        console.log(a / b);
+        console.log(a % b);
+        console.log("=================");
+        console.log(a == b);
+        console.log(a < b);
+        console.log(a > b);
+        console.log(a != b);
+        console.log("=================");
+        console.log(a && b);
+        console.log(a || b);
+        console.log(!a);
+        console.log("=================");
+        console.log(a & b);
+        console.log(a | b);
+        console.log(a ^ b);
+        console.log(~a);
+        console.log(a == b ? 'sama' : 'tidak sama');
+        alert('Hallo Selamat datang di arkatama');
+    </script>
+    <Script>
+        let strinG = prompt("Apakah kamu mau makan malam denganku?");
+        alert('Jawaban Anda ' + strinG);
+    </Script>
+    <script>
+        let sTring = confirm("Apakah kamu mau makan denganku?");
+        sTring ? alert('Jawaban Anda mau') : alert('Jawaban Anda tidak mau');
+        if (sTring) {
+            alert('Jawaban Anda mau');
+        } 
+    </script>
+    <script>
+        sTring ? alert('Jawaban Anda mau') : alert('Jawaban Anda tidak mau');
+        if (sTring) {
+            alert('Jawaban Anda mau');
+        } else {
+            alert('Jawaban Anda tidak mau');
+        }
+    </script>
+    <script>
+    let answer = prompt("1 + 1 ?");
+    let number = parseInt(answer); // Konversi string menjadi angka
+
+    if (!isNaN(number)) { // Periksa apakah input adalah angka
+        if (number === 2) {
+            alert('Jawaban Anda Betul');
+        } else if (number > 2) {
+            alert('Jawaban Anda Kelebihan');
+        } else if (number < 2) {
+            alert('Jawaban Anda Kurang');
+        } else {
+            alert('Jawaban Anda Salah');
+        }
+    } else {
+        alert('Masukkan angka yang valid!');
+    }
+    </script>
+    <script>
+        let color = "blue";
+
+        switch (color) {
+            case "red":
+                alert('I Love Red!');
+                break;
+            
+            case "blue":
+                alert('I Love Blue!');
+                break;
+
+            default:
+                alert('I dont know what color is!');
+                break;
+        }
+    </script>
+    <script>
+        for (let i = 1; i < 5; i++){
+        document.writeln(i);
+        document.writeln("<br>");
+        }
+    </script>
+    <script>
+        let B = 1;
+
+        while (b<5) {
+            document.writeln(b);
+            document.writeln("<br>");
+            b++;
+        }
+    </script><br><br>
+    <script>
+        let i = 1;
+        document.writeln('Perulangan do while');
+        document.writeln("<br>");
+        do {
+            document.writeln(i);
+            document.writeln("<br>");
+            i++
+        } while (i<5);
+    </script><br><br>
+    <script>
+        document.writeln('Perulangan for');
+        document.writeln("<br>");
+        for (let a = 1; a < 5; a++) {
+            if (a == 3) {
+                break;
+            }
+            document.writeln(a);
+            document.writeln("<br>");
+        }
+    </script><br><br>
+    <script>
+        document.writeln('Perulangan for');
+        document.writeln("<br>");
+        for (let a = 1; a < 5; a++) {
+            if (a == 3) {
+                continue;
+            }
+            document.writeln(a);
+            document.writeln("<br>");
+        }
+    </script>
+
+</body>
+</html>
