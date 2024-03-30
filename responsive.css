@@ -1,0 +1,133 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Login Page styles */
+#login-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Product Page styles */
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h4 {
+    margin-top: 0;
+}
+
+.item p {
+    margin-bottom: 5px;
+}
+
+.add-item-button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive styles */
+/* Desktop */
+@media (min-width: 781px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet */
+@media (min-width: 431px) and (max-width: 780px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 430px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Product Page styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.add-item-button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive styles */
+/* Background color variations based on device */
+/* Desktop */
+@media (min-width: 781px) {
+    body {
+        background-color: #c76b6b; /* Merah */
+    }
+}
+
+/* Tablet */
+@media (min-width: 431px) and (max-width: 780px) {
+    body {
+        background-color: #c9c968; /* Kuning */
+    }
+}
+
+/* Mobile */
+@media (max-width: 430px) {
+    body {
+        background-color: #86cf86; /* Hijau */
+    }
+}

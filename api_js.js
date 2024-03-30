@@ -5,7 +5,7 @@ function goToForm() {
 async function fetchPosts() {
   try {
     const response = await fetch(
-      "https://crudcrud.com/api/2752d172c18b45428bf8355602c6c64d/posts/"
+      "https://crudcrud.com/api/1384ba93143a466398b66910749e0d74/posts/"
     );
     const data = await response.json();
 
@@ -32,7 +32,7 @@ async function fetchPosts() {
 async function deletePost(postId) {
   try {
     const response = await fetch(
-      "https://crudcrud.com/api/2752d172c18b45428bf8355602c6c64d/posts/" +
+      "https://crudcrud.com/api/1384ba93143a466398b66910749e0d74/posts/" +
         postId,
       {
         method: "DELETE",
@@ -54,7 +54,7 @@ async function deletePost(postId) {
 fetchPosts();
 
 // Javascript file formapi.html
-const baseURL = "https://crudcrud.com/api/2752d172c18b45428bf8355602c6c64d"; // Ganti dengan URL API dan API key Anda
+const baseURL = "https://crudcrud.com/api/1384ba93143a466398b66910749e0d74"; // Ganti dengan URL API dan API key Anda
 
 document
   .getElementById("input-form")
